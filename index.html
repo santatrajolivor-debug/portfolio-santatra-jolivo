@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santatra Jolivo Randrianirina — Développeur Web & Informaticien polyvalent basé à Antananarivo, Madagascar. Portfolio de projets web professionnels.">
+    <meta name="keywords" content="développeur web, Madagascar, Antananarivo, HTML, CSS, PHP, MySQL, portfolio">
+    <meta name="author" content="Santatra Jolivo Randrianirina">
+    <title>Santatra Jolivo — Développeur Web & Informaticien</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+    <!-- ==================== LOADER ==================== -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-code">
+                <span class="loader-bracket">&lt;</span>
+                <span class="loader-name">SJ</span>
+                <span class="loader-bracket"> /&gt;</span>
+            </div>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- ==================== CURSOR ==================== -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SJ<span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#apropos" class="nav-link">À propos</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#experience" class="nav-link">Expériences</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="assets/cv/CV_Santatra_Jolivo.pdf" class="btn-nav" download>
+                    <i class="fas fa-download"></i> CV
+                </a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow glow-1"></div>
+            <div class="hero-glow glow-2"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Disponible pour missions & projets</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Bonjour, je suis</span>
+                    <span class="hero-name">Santatra Jolivo</span>
+                    <span class="hero-name-last">Randrianirina</span>
+                </h1>
+                <div class="hero-typing-wrapper">
+                    <span class="hero-static">Développeur </span>
+                    <span class="hero-typing" id="heroTyping"></span>
+                    <span class="hero-cursor-blink">|</span>
+                </div>
+                <p class="hero-desc">
+                    Passionné d'informatique et de technologies numériques. Je conçois des solutions web professionnelles 
+                    — du frontend au backend — avec un souci constant de qualité et de fonctionnalité.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projets" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        Découvrir mes projets
+                    </a>
+                    <a href="assets/cv/CV_Santatra_Jolivo.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-file-pdf"></i>
+                        Télécharger mon CV
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <i class="fas fa-envelope"></i>
+                        Me contacter
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Ans d'expérience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <div class="profile-ring ring-outer"></div>
+                    <div class="profile-ring ring-inner"></div>
+                    <div class="profile-img-wrapper">
+                        <img src="assets/images/profile.jpg" alt="Santatra Jolivo Randrianirina" class="profile-img">
+                    </div>
+                    <div class="profile-badge badge-top">
+                        <i class="fas fa-code"></i>
+                        <span>Dev Web</span>
+                    </div>
+                    <div class="profile-badge badge-bottom">
+                        <i class="fas fa-database"></i>
+                        <span>Backend</span>
+                    </div>
+                </div>
+                <div class="hero-code-card">
+                    <div class="code-card-header">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="code-filename">santatra.php</span>
+                    </div>
+                    <div class="code-card-body">
+                        <code>
+<span class="c-purple">$dev</span> = [<br>
+&nbsp;&nbsp;<span class="c-green">'nom'</span> => <span class="c-orange">'Santatra Jolivo'</span>,<br>
+&nbsp;&nbsp;<span class="c-green">'localisation'</span> => <span class="c-orange">'Antananarivo'</span>,<br>
+&nbsp;&nbsp;<span class="c-green">'stack'</span> => [<span class="c-orange">'HTML','PHP','MySQL'</span>],<br>
+&nbsp;&nbsp;<span class="c-green">'statut'</span> => <span class="c-blue">'Disponible ✓'</span><br>
+];
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#apropos" class="scroll-down" aria-label="Défiler vers le bas">
+            <div class="scroll-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </a>
+    </section>
+
+    <!-- ==================== À PROPOS ==================== -->
+    <section class="about" id="apropos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 — À propos</span>
+                <h2 class="section-title">Mon parcours</h2>
+                <p class="section-subtitle">Qui je suis et ce que je fais</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p>
+                            Je suis <strong>Santatra Jolivo Randrianirina</strong>, développeur web basé à Antananarivo, Madagascar. 
+                            Passionné d'informatique et de technologies numériques depuis plusieurs années, je m'oriente vers la conception 
+                            de solutions web et d'applications de gestion concrètes.
+                        </p>
+                        <p>
+                            Je maîtrise les bases du développement frontend et backend : HTML5, CSS3, PHP et MySQL. 
+                            Je développe progressivement mes compétences en architecture d'applications, DevOps et Data Analytics. 
+                            Mon parcours en Économie et Gestion me permet également de comprendre les besoins organisationnels des entreprises.
+                        </p>
+                        <p>
+                            Mon objectif est de continuer à progresser et de contribuer à des projets informatiques ambitieux — 
+                            que ce soit pour des agences, des startups technologiques ou des clients freelance.
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap highlight-icon"></i>
+                            <div>
+                                <strong>BAC+2 — Économie et Gestion</strong>
+                                <span>Université de Fianarantsoa · 2024–2025</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-school highlight-icon"></i>
+                            <div>
+                                <strong>Baccalauréat — Série A2</strong>
+                                <span>Collège Sacré-Cœur, Toliara · 2021</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-map-marker-alt highlight-icon"></i>
+                            <div>
+                                <strong>Antananarivo, Madagascar</strong>
+                                <span>Disponible localement & en remote</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="assets/cv/CV_Santatra_Jolivo.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Télécharger mon CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Me contacter
+                        </a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="about-card-header">
+                            <i class="fas fa-terminal"></i>
+                            <span>profil.json</span>
+                        </div>
+                        <div class="about-card-body">
+                            <div class="json-line"><span class="json-key">"nom"</span>: <span class="json-string">"Santatra Jolivo Randrianirina"</span>,</div>
+                            <div class="json-line"><span class="json-key">"titre"</span>: <span class="json-string">"Développeur Web & Informaticien"</span>,</div>
+                            <div class="json-line"><span class="json-key">"email"</span>: <span class="json-string">"santatrajolivor@gmail.com"</span>,</div>
+                            <div class="json-line"><span class="json-key">"tel"</span>: <span class="json-string">"+261 38 57 573 15"</span>,</div>
+                            <div class="json-line"><span class="json-key">"ville"</span>: <span class="json-string">"Antananarivo, Madagascar"</span>,</div>
+                            <div class="json-line"><span class="json-key">"github"</span>: <span class="json-string">"santatrajolivor-debug"</span>,</div>
+                            <div class="json-line"><span class="json-key">"disponible"</span>: <span class="json-bool">true</span></div>
+                        </div>
+                    </div>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Curieux & autodidacte</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Orienté solutions</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <span>Esprit d'équipe</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>En progression continue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== COMPÉTENCES ==================== -->
+    <section class="skills" id="competences">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 — Compétences</span>
+                <h2 class="section-title">Mes compétences techniques</h2>
+                <p class="section-subtitle">Maîtrisées et en cours d'apprentissage</p>
+            </div>
+
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="webdev">
+                    <i class="fas fa-code"></i> Développement Web
+                </button>
+                <button class="tab-btn" data-tab="backend">
+                    <i class="fas fa-server"></i> Backend & Base de données
+                </button>
+                <button class="tab-btn" data-tab="devops">
+                    <i class="fab fa-docker"></i> DevOps
+                    <span class="tab-badge">En apprentissage</span>
+                </button>
+                <button class="tab-btn" data-tab="data">
+                    <i class="fas fa-chart-bar"></i> Data Analytics
+                    <span class="tab-badge">En apprentissage</span>
+                </button>
+                <button class="tab-btn" data-tab="tools">
+                    <i class="fas fa-tools"></i> Outils & Informatique
+                </button>
+            </div>
+
+            <div class="skills-content">
+                <!-- Développement Web -->
+                <div class="tab-panel active" id="tab-webdev">
+                    <div class="skills-grid">
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <span class="skill-level level-good">Maîtrisé</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
+                                <span class="skill-level level-good">Maîtrisé</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <span class="skill-level level-learning">Notions de base</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <div class="skill-info">
+                                <h4>PHP</h4>
+                                <span class="skill-level level-good">Intermédiaire</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>SQL / MySQL</h4>
+                                <span class="skill-level level-good">Intermédiaire</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Responsive Design</h4>
+                                <span class="skill-level level-good">Maîtrisé</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-tools">
+                        <h4>Outils utilisés</h4>
+                        <div class="tools-list">
+                            <span class="tool-tag"><i class="fas fa-code"></i> VS Code</span>
+                            <span class="tool-tag"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="tool-tag"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="tool-tag"><i class="fas fa-server"></i> XAMPP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="tab-panel" id="tab-backend">
+                    <div class="skills-grid">
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <div class="skill-info">
+                                <h4>PHP Backend (PDO)</h4>
+                                <span class="skill-level level-good">Intermédiaire</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>MySQL / MariaDB</h4>
+                                <span class="skill-level level-good">Intermédiaire</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                            <div class="skill-info">
+                                <h4>API REST</h4>
+                                <span class="skill-level level-learning">Notions pratiques</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <h4>React (Vite)</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                            <div class="skill-info">
+                                <h4>Architecture MVC</h4>
+                                <span class="skill-level level-learning">Notions pratiques</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Sécurité (Sessions, Rôles)</h4>
+                                <span class="skill-level level-learning">Notions appliquées</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="tab-panel" id="tab-devops">
+                    <div class="learning-banner">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Ces compétences sont actuellement en cours d'apprentissage actif.</span>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                            <div class="skill-info">
+                                <h4>Linux</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="30"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <div class="skill-info">
+                                <h4>Docker</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="20"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Git avancé</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                            <div class="skill-info">
+                                <h4>Bash / Scripts</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="25"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                            <div class="skill-info">
+                                <h4>GitHub Actions / CI-CD</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="20"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analytics -->
+                <div class="tab-panel" id="tab-data">
+                    <div class="learning-banner">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Ces compétences sont actuellement en cours d'apprentissage actif.</span>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                            <div class="skill-info">
+                                <h4>Excel</h4>
+                                <span class="skill-level level-notions">Notions de base</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>SQL (Analytique)</h4>
+                                <span class="skill-level level-notions">Notions de base</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="skill-info">
+                                <h4>Power BI</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="20"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="25"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card learning">
+                            <div class="skill-icon"><i class="fas fa-book-open"></i></div>
+                            <div class="skill-info">
+                                <h4>Jupyter Notebook</h4>
+                                <span class="skill-level level-learning">En apprentissage</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="20"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outils -->
+                <div class="tab-panel" id="tab-tools">
+                    <div class="skills-grid">
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-headset"></i></div>
+                            <div class="skill-info">
+                                <h4>Assistance informatique</h4>
+                                <span class="skill-level level-good">Expérience pratique</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                            <div class="skill-info">
+                                <h4>Gestion cybercafé</h4>
+                                <span class="skill-level level-good">Expérience pratique</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-file-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Bureautique & Documents</h4>
+                                <span class="skill-level level-good">Maîtrisé</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-card acquired">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <div class="skill-info">
+                                <h4>Outils IA & Automatisation</h4>
+                                <span class="skill-level level-good">Utilisation active</span>
+                                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-legend">
+                <span class="legend-item"><span class="legend-dot dot-acquired"></span> Maîtrisé / Acquis</span>
+                <span class="legend-item"><span class="legend-dot dot-learning"></span> En cours d'apprentissage</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJETS ==================== -->
+    <section class="projects" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 — Projets</span>
+                <h2 class="section-title">Mes réalisations</h2>
+                <p class="section-subtitle">Quatre projets concrets développés de A à Z</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJET 1 — Blue Travel Madagascar -->
+                <article class="project-card featured" data-project="blue-travel">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, #0066cc 0%, #004a99 50%, #003380 100%);">
+                            <div class="project-preview-content">
+                                <i class="fas fa-globe-africa project-preview-icon"></i>
+                                <span>Blue Travel Madagascar</span>
+                                <div class="project-preview-tags">
+                                    <span>Tourisme</span><span>Web</span><span>Madagascar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://santatrajolivor-debug.github.io/Blue-Travel-Madagascar-/index.html" target="_blank" class="project-link" aria-label="Voir le site">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Voir en ligne</span>
+                                </a>
+                                <a href="https://github.com/santatrajolivor-debug" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code source</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-featured-badge">Projet vedette</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-number">01</div>
+                        <h3 class="project-title">Blue Travel Madagascar</h3>
+                        <p class="project-desc">
+                            Site web touristique dédié à la découverte de Madagascar. Présentation des destinations, 
+                            articles de voyage, galeries photographiques et formulaire de contact pour les voyageurs.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item"><i class="fas fa-check"></i> Pages destinations détaillées (20+ lieux)</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Articles de voyage thématiques</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Galerie photographique organisée</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Formulaire de contact</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Design responsive multi-appareils</div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://santatrajolivor-debug.github.io/Blue-Travel-Madagascar-/index.html" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Découvrir le projet
+                            </a>
+                            <a href="https://github.com/santatrajolivor-debug" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> Voir le code source
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJET 2 — GestionConge Pro -->
+                <article class="project-card featured" data-project="gestion-conge">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+                            <div class="project-preview-content">
+                                <i class="fas fa-calendar-check project-preview-icon"></i>
+                                <span>GestionConge Pro</span>
+                                <div class="project-preview-tags">
+                                    <span>RH</span><span>Full Stack</span><span>React</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/santatrajolivor-debug" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code source</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-featured-badge">Projet vedette</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-number">02</div>
+                        <h3 class="project-title">GestionConge Pro</h3>
+                        <p class="project-desc">
+                            Application web complète de gestion des congés et du personnel. Architecture Full Stack 
+                            avec backend PHP/MySQL et frontend React, 4 rôles d'utilisateurs et tableau de bord RH.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item"><i class="fas fa-check"></i> 4 rôles : Admin, RH, Manager, Employé</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Soumission & validation des demandes</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Tableau de bord avec statistiques</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Calendrier des absences & conflits</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Export rapports CSV</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> API RESTful avec 11 tables MySQL</div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-react"></i> React 19</span>
+                            <span class="tech-tag"><i class="fab fa-php"></i> PHP 8.2</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/santatrajolivor-debug" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-info-circle"></i> Découvrir le projet
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJET 3 — White Palace Hotel -->
+                <article class="project-card" data-project="white-palace">
+                    <div class="project-image">
+                        <div class="project-img-placeholder" style="background: linear-gradient(135deg, #006B7F 0%, #005566 50%, #004455 100%);">
+                            <div class="project-preview-content">
+                                <i class="fas fa-hotel project-preview-icon"></i>
+                                <span>White Palace Hotel</span>
+                                <div class="project-preview-tags">
+                                    <span>Hôtellerie</span><span>Vitrine</span><span>Pro</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://santatrajolivor-debug.github.io/WHITE-PALACE-HOTEL/" target="_blank" class="project-link" aria-label="Voir le site">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Voir en ligne</span>
+                                </a>
+                                <a href="https://github.com/santatrajolivor-debug" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code source</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-number">03</div>
+                        <h3 class="project-title">White Palace Hotel</h3>
+                        <p class="project-desc">
+                            Site vitrine professionnel pour l'Hôtel White Palace à Antananarivo. Présentation élégante 
+                            de l'établissement, des chambres et des services hôteliers.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item"><i class="fas fa-check"></i> Pages chambres individuelles détaillées</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Présentation des services (restaurant, fitness, parking)</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Galerie photos et ambiances</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Page de contact & réservation WhatsApp</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Design responsive et élégant</div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://santatrajolivor-debug.github.io/WHITE-PALACE-HOTEL/" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Découvrir le projet
+                            </a>
+                            <a href="https://github.com/santatrajolivor-debug" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJET 4 — Gestion Cyber Café -->
+                <article class="project-card" data-project="cyber-cafe">
+                    <div class="project-image">
+                        <div class="project-preview-screenshots">
+                            <img src="assets/screenshots/cybercafe-1.png" alt="Gestion Cyber Café - Interface principale" class="screenshot-img active">
+                            <img src="assets/screenshots/cybercafe-2.png" alt="Gestion Cyber Café - Gestion clients" class="screenshot-img">
+                            <img src="assets/screenshots/cybercafe-3.png" alt="Gestion Cyber Café - Tableau de bord" class="screenshot-img">
+                            <div class="screenshot-nav">
+                                <button class="ss-btn active" data-index="0">●</button>
+                                <button class="ss-btn" data-index="1">●</button>
+                                <button class="ss-btn" data-index="2">●</button>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/santatrajolivor-debug" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code source</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-number">04</div>
+                        <h3 class="project-title">Gestion de Cyber Café</h3>
+                        <p class="project-desc">
+                            Application informatique dédiée à la gestion opérationnelle d'un cybercafé, avec interfaces 
+                            de gestion des sessions, clients et services. Développé à partir d'une expérience terrain réelle.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item"><i class="fas fa-check"></i> Interface de gestion des postes</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Gestion des sessions clients</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Suivi des services proposés</div>
+                            <div class="feature-item"><i class="fas fa-check"></i> Tableaux de bord opérationnels</div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/santatrajolivor-debug" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fas fa-info-circle"></i> Découvrir le projet
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/santatrajolivor-debug" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> Voir tous mes projets sur GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPÉRIENCES ==================== -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 — Parcours</span>
+                <h2 class="section-title">Expériences & Formation</h2>
+                <p class="section-subtitle">Mon parcours professionnel et académique</p>
+            </div>
+
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+
+                <!-- 2026 — Développeur Web Freelance -->
+                <div class="timeline-item" data-type="work">
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year">2025 – 2026</span>
+                            <span class="timeline-type type-work">Freelance</span>
+                        </div>
+                        <h3 class="timeline-title">Développeur Web Freelance</h3>
+                        <span class="timeline-company"><i class="fas fa-building"></i> Hôtel White Palace — Antananarivo</span>
+                        <ul class="timeline-tasks">
+                            <li>Création d'un site vitrine professionnel pour l'hôtel</li>
+                            <li>Présentation de l'établissement, des chambres et des services</li>
+                            <li>Conception responsive et publication en ligne</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2026 — Agent de prospection -->
+                <div class="timeline-item" data-type="work">
+                    <div class="timeline-dot">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year">2026</span>
+                            <span class="timeline-type type-work">CDI / Mission</span>
+                        </div>
+                        <h3 class="timeline-title">Agent de Prospection Téléphonique (Cold Calling)</h3>
+                        <span class="timeline-company"><i class="fas fa-building"></i> Solution IA Téléphonie</span>
+                        <ul class="timeline-tasks">
+                            <li>Prospection B2B auprès d'entreprises cibles</li>
+                            <li>Présentation d'une solution d'agent téléphonique IA</li>
+                            <li>Qualification de prospects et mise à jour CRM</li>
+                            <li>Préparation et suivi des relances commerciales</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>CRM</span><span>B2B</span><span>IA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2026 — Vinted -->
+                <div class="timeline-item" data-type="work">
+                    <div class="timeline-dot">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year">2026</span>
+                            <span class="timeline-type type-work">Freelance</span>
+                        </div>
+                        <h3 class="timeline-title">Gestionnaire de Comptes / Ventes en Ligne</h3>
+                        <span class="timeline-company"><i class="fas fa-store"></i> Vinted — Freelance</span>
+                        <ul class="timeline-tasks">
+                            <li>Gestion des échanges avec les acheteurs</li>
+                            <li>Présentation et valorisation des articles</li>
+                            <li>Suivi des demandes et relances clients</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>E-commerce</span><span>Relation client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 — YAS Madagascar -->
+                <div class="timeline-item" data-type="work">
+                    <div class="timeline-dot">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year">2024</span>
+                            <span class="timeline-type type-work">CDI</span>
+                        </div>
+                        <h3 class="timeline-title">Animateur Commercial Terrain</h3>
+                        <span class="timeline-company"><i class="fas fa-building"></i> YAS Madagascar</span>
+                        <ul class="timeline-tasks">
+                            <li>Promotion et vente de produits et services télécoms</li>
+                            <li>Accueil, information et orientation des clients</li>
+                            <li>Animation commerciale sur le terrain</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Vente</span><span>Télécoms</span><span>Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 — Formation -->
+                <div class="timeline-item" data-type="edu">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year">2024–2025</span>
+                            <span class="timeline-type type-edu">Formation</span>
+                        </div>
+                        <h3 class="timeline-title">BAC+2 — Économie et Gestion</h3>
+                        <span class="timeline-company"><i class="fas fa-university"></i> Université de Fianarantsoa</span>
+                        <ul class="timeline-tasks">
+                            <li>Économie, gestion d'entreprise et comptabilité</li>
+                            <li>Compréhension des besoins organisationnels</li>
+                            <li>Outils de gestion et analyse économique</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2023 — Cyber Triple A -->
+                <div class="timeline-item" data-type="work">
+                    <div class="timeline-dot">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year">2023–2024</span>
+                            <span class="timeline-type type-work">CDI</span>
+                        </div>
+                        <h3 class="timeline-title">Agent Multiservices & Cybercafé</h3>
+                        <span class="timeline-company"><i class="fas fa-building"></i> Cyber Triple A</span>
+                        <ul class="timeline-tasks">
+                            <li>Accueil et assistance informatique aux clients</li>
+                            <li>Gestion des postes et sessions de travail</li>
+                            <li>Impression, saisie et gestion de documents</li>
+                            <li>Création de contenus et services bureautiques</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Informatique</span><span>Bureautique</span><span>Assistance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2021 — Baccalauréat -->
+                <div class="timeline-item" data-type="edu">
+                    <div class="timeline-dot">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-year">2021</span>
+                            <span class="timeline-type type-edu">Diplôme</span>
+                        </div>
+                        <h3 class="timeline-title">Baccalauréat — Série A2</h3>
+                        <span class="timeline-company"><i class="fas fa-school"></i> Collège Sacré-Cœur, Toliara</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 — Contact</span>
+                <h2 class="section-title">Travaillons ensemble</h2>
+                <p class="section-subtitle">Disponible pour vos projets web, freelance ou opportunités professionnelles</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <p>
+                            Vous avez un projet web, une opportunité ou simplement une question ? 
+                            N'hésitez pas à me contacter directement. Je vous répondrai dans les plus brefs délais.
+                        </p>
+                    </div>
+                    <div class="contact-cards">
+                        <a href="mailto:santatrajolivor@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">santatrajolivor@gmail.com</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-card-arrow"></i>
+                        </a>
+                        <a href="tel:+261385757315" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Téléphone</span>
+                                <span class="contact-card-value">+261 38 57 573 15</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-card-arrow"></i>
+                        </a>
+                        <a href="https://github.com/santatrajolivor-debug" target="_blank" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">GitHub</span>
+                                <span class="contact-card-value">santatrajolivor-debug</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-card-arrow"></i>
+                        </a>
+                        <div class="contact-card no-link">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Localisation</span>
+                                <span class="contact-card-value">Antananarivo, Madagascar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-availability">
+                        <span class="availability-dot"></span>
+                        <span>Actuellement disponible pour des projets freelance et opportunités professionnelles</span>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Votre nom</label>
+                            <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Votre email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject">
+                                <option value="">Sélectionner un sujet...</option>
+                                <option value="projet">Projet web à développer</option>
+                                <option value="freelance">Mission freelance</option>
+                                <option value="emploi">Opportunité d'emploi</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                        <div class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            Ce formulaire envoie un email directement à mon adresse. Je vous répondrai sous 24–48h.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#accueil" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>SJ<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Développeur Web & Informaticien polyvalent basé à Antananarivo, Madagascar.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/santatrajolivor-debug" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:santatrajolivor@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+261385757315" class="social-link" aria-label="Téléphone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#experience">Expériences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Projets</h4>
+                    <ul>
+                        <li><a href="https://santatrajolivor-debug.github.io/Blue-Travel-Madagascar-/index.html" target="_blank">Blue Travel Madagascar</a></li>
+                        <li><a href="#projets">GestionConge Pro</a></li>
+                        <li><a href="https://santatrajolivor-debug.github.io/WHITE-PALACE-HOTEL/" target="_blank">White Palace Hotel</a></li>
+                        <li><a href="#projets">Gestion Cyber Café</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cv">
+                    <h4>Télécharger mon CV</h4>
+                    <a href="assets/cv/CV_Santatra_Jolivo.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-file-pdf"></i> Télécharger le CV
+                    </a>
+                    <p class="cv-formats">Format PDF — Mis à jour 2026</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Santatra Jolivo Randrianirina — Tous droits réservés.</p>
+                <p class="footer-made">Conçu & développé avec <i class="fas fa-heart" style="color:#e74c3c;"></i> par Santatra</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
